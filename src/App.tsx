@@ -1,11 +1,15 @@
+import Hero from "./sections/Hero/Hero.tsx";
+import { ThemeProvider } from "@/components/theme-provider"
+
+
 
 function App() {
 
   return (
     <>
-        <h1 className='text-cyan-900'>
-            Hello world!
-        </h1>
+        <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+            <Hero />
+        </ThemeProvider>
     </>
   )
 }

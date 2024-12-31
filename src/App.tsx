@@ -3,7 +3,9 @@ function App() {
 
   return (
     <>
-        <div>Hello World</div>
+        <h1 className='text-cyan-900'>
+            Hello world!
+        </h1>
     </>
   )
 }

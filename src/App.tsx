@@ -1,4 +1,5 @@
 import Hero from "./sections/Hero/Hero.tsx";
+import Projects from "./sections/Projects/Projects.tsx";
 import { ThemeProvider } from "@/components/theme-provider"
 
 
@@ -9,6 +10,7 @@ function App() {
     <>
         <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
             <Hero />
+            <Projects/>
         </ThemeProvider>
     </>
   )

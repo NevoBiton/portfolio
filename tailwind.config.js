@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const { fontFamily } = require('tailwindcss/defaultTheme');
+
 export default {
     darkMode: ["class"],
     content: [
@@ -7,6 +9,10 @@ export default {
   ],
   theme: {
   	extend: {
+		fontFamily: {
+			mono: ['Roboto Mono', ...fontFamily.mono], // Adds Roboto Mono as a monospace font
+			rubik: ['Rubik', "sans-serif"],     // Adds Rubik as a sans-serif font
+		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
